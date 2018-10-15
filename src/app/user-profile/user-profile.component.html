@@ -1,0 +1,12 @@
+<img [src]="User.photo">
+
+<ul>
+  <li id="hide-stuff">age: {{User.age}}</li>
+  <li>nom: {{User.name}}</li>
+  <li>prenom: {{User.firstName}}</li>
+  <li>citation: {{User.quote}}</li>
+</ul>
+
+<input [(ngModel)]="User.quote" placeholder="tapes un truk ici">
+
+<button (click)="cacherAge()">Afficher/masquer l'age</button>
